@@ -11,13 +11,13 @@ import { RepresentanteTecnico } from './entities/RepresentanteTecnico.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'oracle',
-      host: process.env.DB_HOST || 'localhost',
+      host:'localhost',
       port: 1521,
-      username: process.env.DB_USERNAME || 'DB_SINESPCT',
-      password: process.env.DB_PASSWORD || 'DB_SINESPCT',
-      sid: process.env.DB_SID || 'XE',
+      username:'system',
+      password:'DB_SINESPCT',
+      sid:'XE',
       entities: [CadastroNacional, RepresentanteLegal, RepresentanteTecnico],
-      synchronize: false, // Set to false in production
+      synchronize: true, // Set to false in production
     }),
     SinespctModule,
   ],
