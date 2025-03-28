@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { CadastroNacional } from './CadastroNacional.entity';
-import { Profissao } from './Profissao';
-import { Vinculo } from './Vinculo';
+import { Profissao } from './Profissao.entity';
+import { Vinculo } from './Vinculo.entity';
 
 @Entity('RL_EQUIPE_TECNICA')
 export class EquipeTecnica {

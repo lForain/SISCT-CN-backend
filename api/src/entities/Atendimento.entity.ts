@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { CadastroNacional } from './CadastroNacional.entity';
-import { TipoAtendimento } from './TipoAtendimento';
+import { TipoAtendimento } from './TipoAtendimento.entity';
 
 @Entity('RL_ATENDIMENTO')
 export class Atendimento {

@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { Resposta } from './Resposta';
+import { Resposta } from './Resposta.entity';
 import { CadastroNacional } from './CadastroNacional.entity';
 
 @Entity('RL_RESPOSTA_SELECIONADA')

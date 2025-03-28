@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { CadastroNacional } from './CadastroNacional.entity';
-import { TipoFinanciamento } from './TipoFinanciamento';
+import { TipoFinanciamento } from './TipoFinanciamento.entity';
 
 @Entity('RL_MAPA_VAGAS')
 export class MapaVagas {
